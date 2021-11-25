@@ -24,6 +24,7 @@ const NameSorter = () => {
             type="text"
             value={textInput.value}
             onChange={inputHandler}
+            placeholder="Search..."
           ></input>
         </form>
       </div>
@@ -39,7 +40,8 @@ const NameSorter = () => {
 
          { (textInput.value.length!==0
          ? (sortedNames.map((element) => {
-            return element.name.toLowerCase().includes(textInput.value) ? (
+           const alteredText = textInput.value.toLowerCase();
+            return element.name.toLowerCase().includes(alteredText) ? (
               element.sex === "f" ? (
                 <NameOfBaby pink={element.name} />
               ) : (
