@@ -1,13 +1,118 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.form-container {
+  margin: 1rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#boy-girl,
+#boy,
+#girl {
+  width: 50px;
+}
+
+.faves-box {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+h3 {
+  margin: 0rem 0.5rem;
+  color: #ccc;
+}
+
+.fave-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+}
+
+input {
+  border: 3px solid skyblue;
+  border-radius: 5px;
+  height: 2rem;
+  width: 15rem;
+  color: steelblue;
+  margin-right: 1rem;
+}
+
+.radio img {
+  height: 50px;
+}
+
+.genders {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + label > img {
+  border: 3px solid pink;
+}
+
+hr {
+  margin: 2rem auto;
+  max-width: 80%;
+  border-top: 1px solid #ccc;
+}
+
+.name-container {
+  border-top: 5px solid pink;
+  border-right: 5px solid skyblue;
+  border-bottom: 5px solid skyblue;
+  border-left: 5px solid pink;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+p {
+  width: 100px;
+  margin: 0rem;
+  border-radius: 5px;
+}
+
+.blue {
+  background-color: skyblue;
+  color: blue;
+}
+
+.pink {
+  background-color: pink;
+  color: red;
 }
