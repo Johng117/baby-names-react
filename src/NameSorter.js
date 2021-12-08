@@ -60,11 +60,7 @@ const NameSorter = () => {
       return a.name > b.name ? 1 : a.name < b.name ? -1 : 0;
     });
     if (genderId === "1") {
-      setAllNamesArr(
-        Data.sort((a, b) => {
-          return a.name > b.name ? 1 : a.name < b.name ? -1 : 0;
-        })
-      );
+      setAllNamesArr(data);
     }
     if (genderId === "2") {
       let boys = data.filter((element) => element.sex === "m");
