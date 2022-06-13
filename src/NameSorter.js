@@ -55,6 +55,7 @@ const NameSorter = () => {
   };
 
   const genderChoiceClick = (e) => {
+    setFaveArray([]);
     let genderId = e.target.id;
     let data = Data.sort((a, b) => {
       return a.name > b.name ? 1 : a.name < b.name ? -1 : 0;
